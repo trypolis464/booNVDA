@@ -13,7 +13,7 @@ def playSpookyRecording():
 # Trigger random confusing errors.
 def recursiveStackBuilder1():
 	if randint(1, 200) == 30:
-		log.exception("hahahahahahaha!", stack_info = True)
+		log.exception("hahahahahahaha!", stack_info = False)
 		return
 	if randint(0, 1):
 		recursiveStackBuilder1()
@@ -22,7 +22,7 @@ def recursiveStackBuilder1():
 
 def recursiveStackBuilder2():
 	if randint(1,100) == 500:
-		log.exception("boo!", stack_info = True)
+		log.exception("boo!", stack_info = False)
 		return
 	if randint(0,1):
 		recursiveStackBuilder1()
